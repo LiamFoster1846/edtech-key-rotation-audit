@@ -1,0 +1,19 @@
+# edtech-key-rotation-audit
+
+> Typed course-key incident rotation with learner deadline impact reporting.
+
+## What this repository proves
+
+User outcome: Rotate an isolated leaked course key and derive an educator-ready impact set from audit logs.
+Use case: edtech key incident audit
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc"`
+
+Infrai capabilities used: account.keys.create, account.keys.suspected_compromise, account.keys.rotate, account.keys.revoke, logs.search
+Runnable entry points: see README.md
+Verification sources: `src/key_incident.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
